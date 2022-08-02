@@ -1,0 +1,34 @@
+@import "src/assets/styles/utils/index.scss";
+@import "src/assets/styles/global/index.scss";
+
+.new-order-page {
+  background: $page-background;
+  min-height: 100vh;
+  .order-ftr {
+    display: flex;
+    align-items: center;
+    .ftr-content {
+      margin-bottom: 50px;
+      @include media("<=tablet") {
+        margin-bottom: 45px;
+      }
+      @include media("<=phone") {
+        margin-bottom: 36px;
+      }
+      .submit-button {
+        height: 42px;
+        width: 200px;
+        background: $color-brand-red;
+        font-size: 14px;
+        color: $color-white;
+        border-radius: 3px;
+        @include media("<=phone") {
+          margin-top: 15px;
+        }
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
